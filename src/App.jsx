@@ -16,12 +16,12 @@ import Obinna from './pages/teams/Obinna'
 import Precious from './pages/teams/Precious'
 import TermsAndConditions from './pages/TermsAndConditions'
 import OtherTeams from './pages/teams/OtherTeams'
-
+import background from './assets/Background.png'
 
 function App() {
 
   return (
-    <>
+    <div className="bg-[url('./assets/Background.png')] bg-cover bg-no-repeat">
       <Nav />
       <Routes>
         <Route path="/" element={<Starter />} />
@@ -40,7 +40,7 @@ function App() {
         <Route path='/team/others' element={<OtherTeams />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   )
 }
 
