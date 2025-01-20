@@ -1,5 +1,5 @@
 import React from 'react'
-// import preciousicon from '../../assets/preciousicon.png';
+import preciousicon from '../../assets/preciousicon.png';
 import next from '../../assets/next.png'
 import JoinTeam from '../../components/JoinTeam';
 import AvailableRoles from '../../components/AvailableRoles';
@@ -11,7 +11,7 @@ const Precious = () => {
             <div className='mt-20 w-full flex flex-col justify-center items-center p-5 my-6'>
                 <h1 className='text-4xl self-start mb-5'>Team</h1>
                 <div className="flex flex-col md:w-[600px] space-y-3 p-3 bg-[#F6F5F5] rounded-md">
-                    <img src={''} className="w-[130px] h-[120px]" alt="picicon" />
+                    <img src={preciousicon} className="w-[130px] h-[120px]" alt="picicon" />
 
                     <div className="flex flex-col space-y-2">
                         <p className='font-bold'>Meet Precious David, Our CEO & Founder</p>
