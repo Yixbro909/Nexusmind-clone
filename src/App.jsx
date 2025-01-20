@@ -16,7 +16,7 @@ import Obinna from './pages/teams/Obinna'
 import Precious from './pages/teams/Precious'
 import TermsAndConditions from './pages/TermsAndConditions'
 import OtherTeams from './pages/teams/OtherTeams'
-import background from './assets/Background.png'
+// import background from './assets/Background.png'
 
 function App() {
 
