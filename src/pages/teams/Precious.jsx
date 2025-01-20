@@ -1,5 +1,5 @@
 import React from 'react'
-import preciousicon from '../../assets/Preciousicon.png';
+import preciousicon from '../../assets/preciousicon.png';
 import next from '../../assets/next.png'
 import JoinTeam from '../../components/JoinTeam';
 import AvailableRoles from '../../components/AvailableRoles';
