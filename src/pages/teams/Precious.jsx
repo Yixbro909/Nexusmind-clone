@@ -1,17 +1,17 @@
 import React from 'react'
-// import precious from '../../assets/preciousicon.png';
 import next from '../../assets/next.png'
 import JoinTeam from '../../components/JoinTeam';
 import AvailableRoles from '../../components/AvailableRoles';
 import { Link } from 'react-router-dom';
+import precious from '../../assets/preciousicon.png';
 
 const Precious = () => {
     return (
         <>
             <div className='mt-20 w-full flex flex-col justify-center items-center p-5 my-6'>
-                <h1 className='text-4xl self-start mb-5'>Team</h1>
                 <div className="flex flex-col md:w-[600px] space-y-3 p-3 bg-[#F6F5F5] rounded-md">
-                    <img src='../../assets/next.png' className="w-[130px] h-[120px]" alt="picicon" />
+                    <h1 className='text-4xl self-start mb-5'>Team</h1>
+                    <img src={precious} className="w-[130px] h-[120px]" alt="picicon" />
 
                     <div className="flex flex-col space-y-2">
                         <p className='font-bold'>Meet Precious David, Our CEO & Founder</p>
