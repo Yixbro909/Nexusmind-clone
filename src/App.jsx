@@ -11,7 +11,6 @@ import LilyPrompt from './pages/LilyPrompt'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Starter from './pages/Starter';
 import Miriam from './pages/teams/Miriam'
-import David from './pages/teams/David'
 import Obinna from './pages/teams/Obinna'
 import Precious from './pages/teams/Precious'
 import TermsAndConditions from './pages/TermsAndConditions'
@@ -32,10 +31,10 @@ function App() {
         <Route path="/termsandcondition" element={<TermsAndConditions />} />
         <Route path='/aboutus' element={<AboutUs />} />
         <Route path='/contactus' element={<ContactUs />} />
+        <Route path='*' element={<Starter />} />
         {/* Team Routes */}
         <Route path='/team/precious' element={<Precious />} />
         <Route path='/team/obinna' element={<Obinna />} />
-        <Route path='/team/david' element={<David />} />
         <Route path='/team/miriam' element={<Miriam />} />
         <Route path='/team/others' element={<OtherTeams />} />
       </Routes>

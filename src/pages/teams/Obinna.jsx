@@ -30,7 +30,7 @@ const Obinna = () => {
                         <Link to="/team/miriam">
                             <img src={prev} alt="previcon" className='w-[40px] h-[40px] ' />
                         </Link>
-                        <Link to="/team/david">
+                        <Link to="/team/others">
                             <img src={next} alt="nexticon" className='w-[40px] h-[40px] ' />
                         </Link>
                     </div>

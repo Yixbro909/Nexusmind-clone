@@ -20,7 +20,7 @@ const OtherTeams = () => {
                         <p>Nosakhare Joseph: Product Manager</p>
                     </div>
                     {/* prev and next icon */}
-                    <Link to="/team/david">
+                    <Link to="/team/obinna">
                         <img src={prev} alt="previcon" className='w-[40px] h-[40px] self-start' />
                     </Link>
                 </div>
