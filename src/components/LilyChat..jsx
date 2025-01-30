@@ -4,7 +4,7 @@ import LoadingDots from '../components/LoadingDots';
 const LilyChat = ({ conversation, loading, error }) => {
 
     return (
-        <div className='w-full flex flex-col-reverse space-y-3'>
+        <div className='w-full flex flex-col space-y-3'>
             {conversation.length > 0 && conversation.map((chat, index) => {
                 if (chat.you) {
 

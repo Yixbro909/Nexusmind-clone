@@ -1,10 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import LightSocialIcons from './LightSocialIcons'
+import { useLocation } from 'react-router-dom'
 
 const Footer = () => {
+
+    const { pathname } = useLocation();
+
     return (
-        <div className="w-full flex flex-col mt-7 bg-[#5A5858] ">
+        <div className={`w-full flex flex-col mt-7 bg-[#5A5858] ${pathname === '/' || pathname === '/contactus' || pathname === '/blogs' ? 'absolute bottom-0' : ''}`}>
             <div className='text-white text-md flex justify-evenly space-x-3 w-full p-5 '>
                 <div className='flex flex-col space-y-3'>
                     <Link to='/aboutus'>About us</Link>

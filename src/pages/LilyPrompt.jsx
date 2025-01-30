@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react'
-import Document from '../assets/Documents.png'
-import Mic from '../assets/Mic.png'
+// import Document from '../assets/Documents.png'
+// import Mic from '../assets/Mic.png'
 import DarkSocialIcons from '../components/DarkSocialIcons'
 import axios from 'axios'
 import LilyChat from '../components/LilyChat.'
+import Send from '../assets/send.svg';
 
 const LilyPrompt = () => {
-    const url = 'http://localhost:080/chatbot'
+    const url = 'https://nexusmind-backend-clone.onrender.com/lilybot'
 
     const [value, setValue] = useState('');
     const [conversation, setConversation] = useState([])
@@ -68,23 +69,25 @@ const LilyPrompt = () => {
         <div className='w-full my-36 flex justify-center items-center p-5'>
             <div className='flex flex-col space-y-4 justify-center w-full md:w-[600px]'>
                 <div>
-                    <h1 className="text-lg md:text-3xl font-semibold">Hello, How may i help you Today?</h1>
+                    <h1 className="text-3xl font-semibold">Hello, How may i help you Today?</h1>
                 </div>
+
+                {/*Display Lily's Chat  */}
+                <LilyChat conversation={conversation} loading={loading} error={error} />
 
                 {/* Lily form prompt */}
                 <form onSubmit={handleSubmit} className='w-full'>
-                    <div className='flex space-x-4 rounded-xl  p-3 shadow-md'>
-                        <button className='bg-none outline-none'>
+                    <div className='flex space-x-4 rounded-xl  p-3 px-5 shadow-md'>
+                        {/* <button className='bg-none outline-none'>
                             <img src={Document} alt="attachments" className='w-[20px] h-[20px]' />
-                        </button>
+                        </button> */}
                         <input type="text" ref={inputRef} onChange={(e) => setValue(e.target.value)} placeholder='Your message...' className='outline-none bg-none grow' />
-                        <button className='bg-none outline-none'>
-                            <img src={Mic} alt="mic" className='w-[20px] h-[20px]' />
+                        <button type='submit' className='bg-none outline-none self-center'>
+                            <img src={Send} alt="send icon" className='w-[20px] h-[20px]' />
                         </button>
                     </div>
                 </form>
 
-                <LilyChat conversation={conversation} loading={loading} error={error} />
 
                 <div className='md:text-lg'>Teams Privacy &#169; 2025 NexusMind All Reserved.</div>
 
